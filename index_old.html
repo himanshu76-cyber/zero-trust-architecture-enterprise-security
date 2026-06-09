@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+
+    <script>
+        let role = localStorage.getItem("role");
+
+        if(role !== "admin"){
+            alert("Access Denied");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Admin Dashboard</h1>
+
+    <h3>Welcome Admin</h3>
+
+    <p>Manage Users</p>
+    <p>View Security Logs</p>
+    <p>Configure Access Policies</p>
+
+</body>
+</html>
