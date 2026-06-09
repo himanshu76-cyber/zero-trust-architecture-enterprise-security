@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Zero Trust Enterprise</title>
-</head>
-<body>
-<h1>Zero Trust Enterprise Portal</h1>
-<p>Authorized Users Only</p>
-</body>
-</html>
+FROM nginx:alpine
+
+COPY index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
