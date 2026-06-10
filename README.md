@@ -38,7 +38,6 @@ Year| 2026
 - "Repository Structure" (#-repository-structure)
 - "Future Enhancements" (#-future-enhancements)
 - "References" (#-references)
-- "License" (#-license)
 
 ---
 
@@ -144,7 +143,7 @@ Roles Defined
 
 Role| Permissions
 Employee| Employee Dashboard Access
-Admin| Employee Dashboard + Admin Dashboard Access
+Admin| Employee + Admin Dashboard Access
 
 Benefits
 
@@ -233,7 +232,7 @@ Continuous Verification| ✅ Achieved
 2. IAM provides centralized identity management and access governance.
 3. RBAC effectively restricts users to authorized resources.
 4. MFA reduces the risk of credential compromise.
-5. Micro-Segmentation limits lateral movement within the environment.
+5. Micro-segmentation limits lateral movement within the environment.
 6. Continuous verification strengthens protection against insider and external threats.
 7. Zero Trust Architecture can be effectively implemented in modern enterprise applications.
 
