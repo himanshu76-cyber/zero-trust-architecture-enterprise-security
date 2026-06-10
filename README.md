@@ -1,59 +1,101 @@
-# SecurePortal
+# 🔐 Zero Trust Architecture Implementation for Enterprise Access Control
 
-A three-page authenticated portal with admin and employee dashboards, served via Docker + Nginx.
+![Project](https://img.shields.io/badge/Project-Minor%20Project%20II-blue)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Architecture-Zero%20Trust-orange](https://img.shields.io/badge/Architecture-Zero%20Trust-orange)
+![Year](https://img.shields.io/badge/Year-2026-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Files
+> A practical implementation of **Zero Trust Architecture (ZTA)** for secure enterprise access control using authentication, authorization, role-based access control, micro-segmentation, and continuous verification principles.
 
-| File | Purpose |
-|------|---------|
-| `login.html` | Login page — authenticates users and redirects to the correct dashboard |
-| `admin_dashboard.html` | Admin-only dashboard — blocked if accessed without admin session |
-| `employee_dashboard.html` | Employee-only dashboard — blocked if accessed without employee session |
-| `Dockerfile` | Builds a lightweight nginx:alpine image |
-| `docker-compose.yml` | Runs the container on port 8080 |
-| `nginx.conf` | Custom nginx server block |
+---
 
-## Credentials
+## 👤 Author
 
-| Role | Username | Password |
-|------|----------|----------|
-| Admin | `admin` | `admin123` |
-| Employee | `employee` | `emp123` |
+| Field | Details |
+|-------|---------|
+| **Name** | Himanshu Soni |
+| **Project** | Minor Project II |
+| **Organization** | Naviotech Solution Pvt Ltd |
+| **Domain** | Cybersecurity · Zero Trust Architecture |
+| **Year** | 2026 |
 
-## Run with Docker Compose (recommended)
+---
 
-```bash
-# Build and start
-docker compose up --build -d
+## 📋 Table of Contents
 
-# Open in browser
-open http://localhost:8080
+- [Overview](#-overview)
+- [Objectives](#-objectives)
+- [Zero Trust Principles](#-zero-trust-principles)
+- [System Architecture](#-system-architecture)
+- [Security Features Implemented](#-security-features-implemented)
+- [Access Control Model](#-access-control-model)
+- [Authentication Workflow](#-authentication-workflow)
+- [Results & Outcomes](#-results--outcomes)
+- [Repository Structure](#-repository-structure)
+- [Future Enhancements](#-future-enhancements)
+- [References](#-references)
 
-# Stop
-docker compose down
-```
+---
 
-## Run with plain Docker
+## 📌 Overview
 
-```bash
-# Build
-docker build -t secureportal .
+Traditional security models assume that users inside a network can be trusted. However, modern cyber threats require a stronger approach.
 
-# Run
-docker run -d -p 8080:80 --name secureportal secureportal
+This project implements a **Zero Trust Architecture (ZTA)** model based on the principle:
 
-# Stop
-docker stop secureportal && docker rm secureportal
-```
+> **"Never Trust, Always Verify"**
 
-## Access Control
+The system continuously verifies user identity, role, and access privileges before granting access to enterprise resources.
 
-- **Login page** → redirects already-logged-in users to their dashboard automatically.
-- **Admin dashboard** → if session role is not `admin`, user is immediately sent back to login.
-- **Employee dashboard** → if session role is not `employee`, user is immediately sent back to login.
-- **URL tampering** → navigating directly to a dashboard without a valid session redirects to login.
-- Sessions are stored in `sessionStorage` (cleared automatically when the browser tab is closed).
+---
 
-## Development (live reload)
+## 🎯 Objectives
 
-The `docker-compose.yml` mounts the HTML files as read-only volumes, so editing a file on your machine updates it instantly — no rebuild needed.
+1. Implement a secure Zero Trust login portal
+2. Enforce Role-Based Access Control (RBAC)
+3. Prevent unauthorized access to protected resources
+4. Apply micro-segmentation between employee and admin resources
+5. Demonstrate continuous verification and least-privilege access
+6. Improve enterprise security against insider and external threats
+
+---
+
+## 🛡️ Zero Trust Principles
+
+| Principle | Description |
+|------------|------------|
+| Verify Explicitly | Authenticate every user before access |
+| Least Privilege | Grant minimum required permissions |
+| Assume Breach | Design security as if attackers are already present |
+| Continuous Monitoring | Validate sessions continuously |
+| Micro-Segmentation | Isolate critical resources |
+| Identity-Centric Security | Security decisions based on identity |
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                 ┌──────────────┐
+                 │    User      │
+                 └──────┬───────┘
+                        │
+                        ▼
+              ┌──────────────────┐
+              │ Login Portal     │
+              └────────┬─────────┘
+                       │
+             Authentication & MFA
+                       │
+                       ▼
+            ┌─────────────────────┐
+            │ Access Control Unit │
+            └───────┬─────────────┘
+                    │
+         ┌──────────┴──────────┐
+         │                     │
+         ▼                     ▼
+ ┌───────────────┐    ┌───────────────┐
+ │ Employee Zone │    │   Admin Zone  │
+ └───────────────┘    └───────────────┘
