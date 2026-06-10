@@ -22,51 +22,61 @@
 ![Encryption](https://img.shields.io/badge/Encryption-AES--256-purple?style=for-the-badge&logo=letsencrypt&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=for-the-badge)
 
-**Author:** Himanshu Soni &nbsp;|&nbsp; **Org:** Naviotech Solution Pvt. Ltd. &nbsp;|&nbsp; **Year:** 2026
-
 </div>
-  
 
-## 👨‍💻 Author
+---
+
+## 👨‍💻 Author & Project Identity
 
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════════════╗
-║                         AUTHOR DETAILS                              ║
-╠══════════════════════════════════════════════════════════════════════╣
-║                                                                      ║
-║   Name            :   Himanshu Soni                                  ║
-║   Organization    :   Naviotech Solution Pvt. Ltd.                   ║
-║   Year            :   2026                                           ║
-║   Role            :   Security Architect / ZTA Lead                  ║
-║   Domain          :   Cybersecurity · Zero Trust Architecture        ║
-║   Contact         :   security@naviotech.in                          ║
-║                                                                      ║
-╠══════════════════════════════════════════════════════════════════════╣
-║                      COMPLIANCE FRAMEWORKS                           ║
-╠══════════════════════════════════════════════════════════════════════╣
-║                                                                      ║
-║   ✅   NIST SP 800-207        —  Zero Trust Architecture             ║
-║   ✅   CISA ZT Maturity Model  —  Zero Trust Maturity Model v2       ║
-║   ✅   ISO/IEC 27001:2022     —  Information Security Management     ║
-║                                                                      ║
-╚══════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║            Z E R O   T R U S T   A R C H I T E C T U R E                   ║
+║                   Research & Implementation Project                          ║
+║                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║   👤  Author          :   Himanshu Soni                                      ║
+║   🏢  Organization    :   Naviotech Solution Pvt. Ltd.                       ║
+║   📅  Year            :   2026                                               ║
+║   🎯  Role            :   Security Architect  /  ZTA Lead                    ║
+║   🌐  Domain          :   Cybersecurity  ·  Zero Trust Architecture          ║
+║   📧  Contact         :   security@naviotech.in                              ║
+║                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                        COMPLIANCE FRAMEWORKS                                 ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║   ✅   NIST SP 800-207          —   Zero Trust Architecture                  ║
+║   ✅   CISA ZT Maturity Model   —   Zero Trust Maturity Model v2             ║
+║   ✅   ISO/IEC 27001 : 2022     —   Information Security Management          ║
+║                                                                              ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                         PROJECT CLASSIFICATION                               ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║                                                                              ║
+║   📁  Type       :   Enterprise Security Architecture Implementation         ║
+║   🔒  Scope      :   Hybrid Cloud  +  On-Premises Infrastructure             ║
+║   📊  Status     :   Production Ready  ·  Continuously Monitored             ║
+║   🗓️  Edition    :   2026  —  Naviotech Solution Pvt. Ltd.                   ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 ```
+
+> *"Built with a security-first mindset — every access decision is a trust decision."*
+> — **Himanshu Soni**, Naviotech Solution Pvt. Ltd., 2026
+
+![Author](https://img.shields.io/badge/Author-Himanshu%20Soni-blueviolet?style=flat-square)
+![Org](https://img.shields.io/badge/Org-Naviotech%20Solution%20Pvt.%20Ltd.-blue?style=flat-square)
+![Year](https://img.shields.io/badge/Year-2026-orange?style=flat-square)
+![NIST](https://img.shields.io/badge/NIST-SP%20800--207-red?style=flat-square)
+![ISO](https://img.shields.io/badge/ISO-27001%3A2022-green?style=flat-square)
+![CISA](https://img.shields.io/badge/CISA-ZT%20Maturity%20Model-9cf?style=flat-square)
 
 </div>
 
-| Field | Detail |
-|-------|--------|
-| **Author** | Himanshu Soni |
-| **Organization** | Naviotech Solution Pvt. Ltd. |
-| **Year** | 2026 |
-| **Domain** | Cybersecurity / Zero Trust Architecture |
-| **Frameworks** | NIST SP 800-207 · CISA ZT Maturity Model · ISO/IEC 27001:2022 |
-| **Contact** | security@naviotech.in |
-
-> *"Built with a security-first mindset — every access decision is a trust decision."*
-> &nbsp;— **Himanshu Soni**, Naviotech Solution Pvt. Ltd., 2026
 ---
 
 ## 📋 Table of Contents
@@ -87,7 +97,6 @@
 | 12 | [🔍 Key Findings](#-key-findings) |
 | 13 | [🚀 Future Enhancements](#-future-enhancements) |
 | 14 | [📚 References](#-references) |
-| 15 | [👨‍💻 Author](#-author) |
 
 ---
 
@@ -246,14 +255,12 @@ All events feed into:
    ┌──────────────┐      │  ┌────────────▼──────────────┐  │
    │  Devices     │──────┼─▶│    Micro-Segmented        │   │
    │  (Posture)   │      │  │    Workload Zones         │   │
-   └──────────────┘      │  │                           │   │
-                         │  │  [Zone A]  [Zone B]       │   │
-   ┌──────────────┐      │  │  Finance   Engineering    │   │
-   │  Service     │──────┼─▶│                           │   │
-   │  Accounts    │      │  │  [Zone C]  [Zone D]       │   │
-   └──────────────┘      │  │  HR/Legal  Public APIs    │   │
-                         │  └───────────────────────────┘  │
-                          ─────────────────────────────────
+   └──────────────┘      │  │  [Zone A]  [Zone B]       │   │
+                         │  │  Finance   Engineering    │   │
+   ┌──────────────┐      │  │  [Zone C]  [Zone D]       │   │
+   │  Service     │──────┼─▶│  HR/Legal  Public APIs    │   │
+   │  Accounts    │      │  └───────────────────────────┘  │
+   └──────────────┘       ─────────────────────────────────
                                           │
                         ╔═════════════════▼══════════════════╗
                         ║           OBSERVABILITY             ║
@@ -284,14 +291,12 @@ All events feed into:
 ```
                 ┌─────────────────────────────────────┐
                 │         Identity Fabric              │
-                │                                     │
                 │  ┌──────────┐    ┌────────────────┐ │
                 │  │  Human   │    │  Non-Human     │ │
                 │  │ Identity │    │  Identity      │ │
                 │  │(Employees│    │(Service Accts, │ │
                 │  │ Partners)│    │ Bots, APIs)    │ │
                 │  └────┬─────┘    └───────┬────────┘ │
-                │       │                  │          │
                 │  ┌────▼──────────────────▼────────┐ │
                 │  │      Unified Identity Store     │ │
                 │  │  (LDAP / AD / SCIM-synced IdP)  │ │
@@ -381,9 +386,9 @@ iam_policy:
 | App Deployments | ✅ | ❌ | ✅ | ✅ Own | ❌ |
 | Incident Console | ✅ | ✅ | 🔍 View | ❌ | ❌ |
 
-> ⚠️ = JIT access required &nbsp;|&nbsp; ✅ = Permitted &nbsp;|&nbsp; ❌ = Denied &nbsp;|&nbsp; 🔍 = View only
+> ⚠️ = JIT required &nbsp;|&nbsp; ✅ = Permitted &nbsp;|&nbsp; ❌ = Denied &nbsp;|&nbsp; 🔍 = View only
 
-### OPA Policy Snippet (RBAC Enforcement)
+### OPA Rego Policy (RBAC Enforcement)
 
 ```rego
 # policy/rbac.rego — Open Policy Agent
@@ -556,22 +561,18 @@ is_restricted_time_window {
 ### Segmentation Rules
 
 ```yaml
-# micro-segmentation-policy.yaml
 segmentation_policies:
 
   - name: "Finance-to-PaymentGW-only"
     source_zone: ZONE_A
     destination: payment-gateway-service
     protocol: HTTPS / port: 443
-    action: ALLOW
-    log: true
+    action: ALLOW / log: true
 
   - name: "Block-Finance-to-Engineering"
     source_zone: ZONE_A
     destination_zone: ZONE_B
-    action: DENY
-    log: true
-    alert: true
+    action: DENY / log: true / alert: true
 
   - name: "Engineering-to-DevDB-only"
     source_zone: ZONE_B
@@ -580,16 +581,13 @@ segmentation_policies:
     action: ALLOW
 
   - name: "Default-Deny-All"
-    source: ANY
-    destination: ANY
-    action: DENY
-    priority: 9999   # catch-all
+    source: ANY / destination: ANY
+    action: DENY / priority: 9999
 ```
 
-### Istio Service Mesh — mTLS Enforcement
+### Istio mTLS Enforcement
 
 ```yaml
-# istio-peer-auth.yaml
 apiVersion: security.istio.io/v1beta1
 kind: PeerAuthentication
 metadata:
@@ -597,7 +595,7 @@ metadata:
   namespace: production
 spec:
   mtls:
-    mode: STRICT   # All service-to-service traffic requires mTLS
+    mode: STRICT
 ```
 
 ---
@@ -612,8 +610,7 @@ spec:
   │  • TLS 1.3 enforced (TLS 1.0 / 1.1 globally disabled) │
   │  • mTLS for all service-to-service communication       │
   │  • Certificate lifecycle managed via cert-manager      │
-  │  • HSTS enforced on all HTTPS endpoints                │
-  │  • Perfect Forward Secrecy (PFS) enabled               │
+  │  • HSTS enforced · Perfect Forward Secrecy enabled     │
   └─────────────────────────────────────────────────────────┘
 
   ┌─────────────────────────────────────────────────────────┐
@@ -622,15 +619,13 @@ spec:
   │  • AWS KMS / Azure Key Vault for key management        │
   │  • Envelope encryption for object storage              │
   │  • Full-disk encryption (BitLocker / FileVault / LUKS) │
-  │  • Encrypted backups with separate key custody         │
   └─────────────────────────────────────────────────────────┘
 
   ┌─────────────────────────────────────────────────────────┐
   │  DATA IN USE                                            │
-  │  • Secrets never exposed in env vars (Vault agent)     │
+  │  • Secrets never in env vars — Vault agent injected    │
   │  • Tokenization for PII and card data (PCI scope)      │
   │  • Field-level encryption for sensitive DB columns     │
-  │  • Memory encryption via AMD SEV / Intel TDX (roadmap) │
   └─────────────────────────────────────────────────────────┘
 ```
 
@@ -638,33 +633,19 @@ spec:
 
 ```
        ┌─────────────────────────────────────┐
-       │        HSM — Hardware Root of Trust  │
-       │   (FIPS 140-2 Level 3 Validated)    │
+       │  HSM — Hardware Root of Trust        │
+       │  (FIPS 140-2 Level 3 Validated)     │
        └──────────────┬──────────────────────┘
                       │
               ┌───────▼──────────┐
-              │   Master Key     │  ← Never exported, never logged
-              │   (KEK Level 1)  │
+              │   Master Key     │  ← Never exported / never logged
               └───────┬──────────┘
-                      │
          ┌────────────┼────────────┐
-         │            │            │
     ┌────▼────┐  ┌────▼────┐  ┌───▼─────┐
     │Database │  │Storage  │  │App      │
-    │   KEK   │  │   KEK   │  │ Secrets │
+    │  KEK    │  │  KEK    │  │Secrets  │
     └────┬────┘  └────┬────┘  └───┬─────┘
-         │            │           │
     [Data Encryption Keys (DEKs) — auto-rotated on schedule]
-```
-
-### Allowed TLS Configuration
-
-```nginx
-ssl_protocols TLSv1.3;
-ssl_ciphers TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256;
-ssl_prefer_server_ciphers off;
-ssl_session_timeout 1d;
-add_header Strict-Transport-Security "max-age=63072000" always;
 ```
 
 ---
@@ -674,18 +655,18 @@ add_header Strict-Transport-Security "max-age=63072000" always;
 ### Security Posture — Before vs After
 
 ```
-Metric                    Before ZTA          After ZTA         Δ
-─────────────────────────────────────────────────────────────────
-Attack Surface Score      87 / 100 (high)  →  23 / 100       ↓ 73%
-MFA Coverage              41%              →  100%            ↑ 59pp
-Mean Time to Detect       72 hours         →  4.2 hours       ↓ 94%
-Lateral Movement          Observed (100%)  →  Zero (0%)       ↓ 100%
-Secrets in Logs           34 occurrences   →  0               ↓ 100%
-Encryption Coverage       43%              →  100%            ↑ 57pp
-Security Incidents (QoQ)  18               →  3               ↓ 83%
+Metric                     Before ZTA           After ZTA        Change
+──────────────────────────────────────────────────────────────────────
+Attack Surface Score       87 / 100 (high)  →  23 / 100        ↓ 73%
+MFA Coverage               41%              →  100%             ↑ 59pp
+Mean Time to Detect        72 hours         →  4.2 hours        ↓ 94%
+Lateral Movement           Observed (100%)  →  Zero (0%)        ↓ 100%
+Secrets in Logs            34 occurrences   →  0                ↓ 100%
+Encryption Coverage        43%              →  100%             ↑ 57pp
+Security Incidents (QoQ)   18               →  3                ↓ 83%
 ```
 
-### Quantitative Outcomes Table
+### Quantitative Outcomes
 
 | Metric | Before | After | Improvement |
 |--------|--------|-------|-------------|
@@ -806,8 +787,6 @@ Q4 2026 ┌───────────────────────
 
 ---
 
----
-
 <div align="center">
 
 ```
@@ -824,7 +803,7 @@ Q4 2026 ┌───────────────────────
 ![Year](https://img.shields.io/badge/Year-2026-orange?style=flat-square)
 ![NIST](https://img.shields.io/badge/NIST-SP%20800--207-red?style=flat-square)
 ![ISO](https://img.shields.io/badge/ISO-27001%3A2022-green?style=flat-square)
-![CISA](https://img.shields.io/badge/CISA-ZT%20Maturity%20Model-lightblue?style=flat-square)
+![CISA](https://img.shields.io/badge/CISA-ZT%20Maturity%20Model-9cf?style=flat-square)
 ![Maintained](https://img.shields.io/badge/Maintained-Yes-success?style=flat-square)
 
 *For security disclosures, contact: **security@naviotech.in***
