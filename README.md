@@ -1,10 +1,6 @@
 🔐 Zero Trust Architecture (ZTA) Implementation for Enterprise Access Control
 
-"Project" (https://img.shields.io/badge/Project-Minor%20Project%20II-blue)
-"Status" (https://img.shields.io/badge/Status-Completed-brightgreen)
-"Architecture" (https://img.shields.io/badge/Architecture-Zero%20Trust-orange)
-"Year" (https://img.shields.io/badge/Year-2026-lightgrey)
-"License" (https://img.shields.io/badge/License-MIT-green)
+
 
 «A practical implementation of Zero Trust Architecture (ZTA) for enterprise security, incorporating Identity and Access Management (IAM), Role-Based Access Control (RBAC), Multi-Factor Authentication (MFA), and Micro-Segmentation to ensure secure access to organizational resources.»
 
