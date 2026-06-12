@@ -10,345 +10,253 @@
   
 ```
 
+# 🛡️ Zero Trust Architecture Enterprise Security
 
+**Project Type** Cybersecurity • Docker • Zero Trust • Access Control
 
-````markdown
-# 🛡️ Zero Trust Architecture (ZTA) Enterprise Security Project
+A practical Zero Trust Architecture (ZTA) implementation designed to demonstrate secure enterprise access control using Docker containers, authentication mechanisms, and role-based authorization policies.
 
-> Minor Project 2 – Cyber Security
->
-> **Author:** Himanshu Soni  
-> **Technology:** Docker, Nginx, HTML, Access Control Simulation  
-> **Domain:** Cyber Security & Zero Trust Architecture (ZTA)
+This project simulates a small enterprise environment where users must be continuously verified before accessing protected resources, following the Zero Trust principle:
 
----
-
-# 📌 Project Overview
-
-This project demonstrates the implementation of a **Zero Trust Architecture (ZTA)** model using Docker containers and a secure web portal.
-
-The project follows the Zero Trust principle:
-
-> **"Never Trust, Always Verify"**
-
-Users are authenticated before access is granted, and role-based access control (RBAC) is used to restrict unauthorized activities.
-
-The implementation simulates an enterprise security environment where employees and administrators have different access privileges.
+> **Never Trust, Always Verify**
 
 ---
 
-# 🎯 Objectives
+## ✨ Project Overview
 
-- Implement Zero Trust principles
-- Simulate secure enterprise access control
-- Demonstrate Role-Based Access Control (RBAC)
-- Validate authentication mechanisms
-- Prevent unauthorized access attempts
-- Deploy application using Docker containers
-- Test insider and external threat scenarios
+This project demonstrates how modern organizations can secure internal resources using Zero Trust concepts.
+
+The simulation includes:
+
+* Secure login authentication
+* Employee and Admin role separation
+* Role-Based Access Control (RBAC)
+* Docker-based deployment
+* Insider threat simulation
+* External attack testing
+* Access restriction and verification
+
+The project highlights how organizations can reduce security risks by continuously validating users rather than trusting network location alone.
 
 ---
 
-# 🏗️ System Architecture
+## 🎯 Objectives
+
+* Implement Zero Trust Architecture principles
+* Demonstrate secure authentication workflows
+* Enforce Role-Based Access Control (RBAC)
+* Simulate enterprise user management
+* Prevent unauthorized access attempts
+* Test insider and external threat scenarios
+* Deploy security controls using Docker
+
+---
+
+## 📊 Key Outcomes
+
+* Dockerized secure web application deployed successfully
+* Employee and Admin roles implemented
+* Unauthorized dashboard access blocked
+* URL manipulation attempts prevented
+* Access permissions enforced through RBAC
+* Security controls validated through testing
+* Enterprise-style Zero Trust environment simulated
+
+These results demonstrate how Zero Trust security can significantly reduce the risk of unauthorized access.
+
+---
+
+## 🧩 Project Structure
 
 ```text
-User
- │
- ▼
-Login Page
- │
- ▼
-Authentication
- │
- ├──────────────┐
- ▼              ▼
-Employee     Admin
-Dashboard   Dashboard
- │              │
- ▼              ▼
-Access Control & Security Policies
+.
+├── screenshots/
+│   ├── login_page.png
+│   ├── employee_dashboard.png
+│   ├── admin_dashboard.png
+│   ├── docker_container_running.png
+│   ├── unauthorized_access_test.png
+│   └── security_validation.png
+│
+├── documentation/
+│   ├── setup_guide_docker.md
+│   ├── rbac_policy.md
+│   ├── mfa_configuration.md
+│   ├── insider_threat_test.md
+│   ├── external_threat_test.md
+│   └── results.md
+│
+├── report/
+│   └── ZeroTrust_Report.docx
+│
+├── presentation/
+│   └── ZeroTrustArchitecture.pptx
+│
+├── docker/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── nginx.conf
+│
+├── web/
+│   ├── login.html
+│   ├── employee_dashboard.html
+│   └── admin_dashboard.html
+│
+└── README.md
 ```
 
 ---
 
-# 🔒 Zero Trust Features Implemented
+## 🖼️ Included Assets
 
-## 1. Identity Verification
+### Screenshots
 
-- User authentication required
-- Login validation
-- Session management
+The screenshot collection demonstrates:
 
-## 2. Role-Based Access Control (RBAC)
+* Login authentication process
+* Employee dashboard access
+* Administrator dashboard access
+* Docker container deployment
+* Security policy enforcement
+* Unauthorized access prevention
 
-- Employee Role
-- Administrator Role
+### Documentation
 
-Permissions are granted based on assigned roles.
+Detailed implementation guides are included covering:
 
-## 3. Continuous Verification
+* Docker deployment
+* RBAC configuration
+* MFA recommendations
+* Threat testing procedures
+* Security validation results
 
-- Access checked before page access
-- Unauthorized requests blocked
+### Presentation
 
-## 4. Session Control
+A PowerPoint presentation is included for:
 
-- Session timeout simulation
-- Login redirection after logout
+* Viva demonstrations
+* Academic submissions
+* Project reviews
+* Security awareness sessions
 
-## 5. Threat Prevention
+### Final Report
 
-- URL tampering protection
-- Unauthorized dashboard access prevention
+The project report contains:
+
+* Project methodology
+* Architecture design
+* Testing procedures
+* Security analysis
+* Findings and recommendations
 
 ---
 
-# 🐳 Docker Implementation
+## 🔐 Security Features
 
-The project is containerized using Docker.
+### Authentication
 
-### Docker Components
+Users must verify their identity before access is granted.
 
-- Dockerfile
-- Docker Compose
-- Nginx Web Server
-- Secure Web Portal
+### Role-Based Access Control (RBAC)
 
-### Build Container
+Permissions are assigned according to user roles.
+
+### Session Security
+
+Sessions are managed and validated to prevent unauthorized access.
+
+### Continuous Verification
+
+Access requests are continuously checked against security policies.
+
+### Threat Protection
+
+The system is tested against common insider and external attack scenarios.
+
+---
+
+## 🐳 Docker Deployment
+
+### Build Docker Image
 
 ```bash
-docker build -t secureportal .
+docker build -t zta-security .
 ```
 
 ### Run Container
 
 ```bash
-docker run -d -p 9090:80 secureportal
+docker run -d -p 9090:80 zta-security
 ```
 
-### Using Docker Compose
+### Verify Running Containers
 
 ```bash
-docker-compose up -d
+docker ps
 ```
 
 ### Access Application
 
 ```text
-http://localhost:9090/login.html
+http://localhost:9090
 ```
 
 ---
 
-# 📁 Project Structure
+## 🛠️ Tech Stack
 
-```text
-zero-trust-architecture-enterprise-security
-
-├── login.html
-├── employee_dashboard.html
-├── admin_dashboard.html
-├── nginx.conf
-├── Dockerfile
-├── docker-compose.yml
-│
-├── setup_guide_docker.md
-├── rbac_policy.md
-├── mfa_configuration.md
-├── insider_threat_test.md
-├── external_threat_test.md
-├── results.md
-│
-├── 1_Project_Overview.docx
-├── 2_Methodology.docx
-├── 3_Findings.docx
-├── Minor_Project2_ZeroTrust_Report.docx
-│
-├── ZTA_Presentation_HimanshuSoni.pptx
-│
-└── Screenshots
-```
+* Docker
+* Docker Compose
+* Nginx
+* HTML
+* CSS
+* JavaScript
+* RBAC Policies
+* Zero Trust Architecture Principles
 
 ---
 
-# 📷 Screenshots Included
+## 📈 Findings Summary
 
-The repository contains project execution screenshots:
+The project demonstrates that security should not rely solely on network boundaries.
 
-### Docker Deployment
+Key observations include:
 
-- Docker Desktop Container Running
-- Container Details
-- Project Folder Structure
+* User identity verification is critical.
+* Least-privilege access reduces attack surface.
+* RBAC effectively limits unauthorized actions.
+* Continuous validation strengthens enterprise security.
+* Docker simplifies deployment and testing environments.
 
-### Authentication Testing
+The strongest lesson is simple:
 
-- Login Page
-- Wrong Password Attempt
-- Access Denied Error
-
-### Employee Dashboard
-
-- Dashboard Overview
-- Tasks & Quick Actions
-- Session Timer
-
-### Admin Dashboard
-
-- Security Logs
-- User Controls
-- Access Management
-
-### Security Validation
-
-- URL Tampering Attempt
-- Unauthorized Access Blocked
-- Redirect to Login
+> Trust should never be assumed. Every request must be verified.
 
 ---
 
-# 👥 User Roles
+## 🚀 How to Present This Project
 
-## Employee
+This repository can be used for:
 
-Allowed:
-
-- View dashboard
-- Access assigned resources
-- View tasks
-
-Restricted:
-
-- Access admin panel
-- Modify security settings
-
-## Administrator
-
-Allowed:
-
-- Access admin dashboard
-- View security logs
-- Manage users
-- Manage permissions
+* Minor Project 2 submission
+* Cybersecurity demonstrations
+* Docker implementation showcase
+* Academic viva presentations
+* Portfolio projects
+* Enterprise security awareness sessions
 
 ---
 
-# 🔐 Security Controls
-
-## RBAC
-
-Role-based permission enforcement.
-
-## MFA Configuration
-
-Supports:
-
-- Google Authenticator
-- Microsoft Authenticator
-- Authy
-- Hardware Security Keys
-
-## Session Security
-
-- Automatic session expiration
-- Secure login workflow
-
-## URL Protection
-
-Direct access to protected pages is blocked.
-
----
-
-# 🧪 Security Testing
-
-## Insider Threat Testing
-
-Tested:
-
-- Employee accessing admin resources
-- Privilege escalation attempts
-- Unauthorized page access
-
-## External Threat Testing
-
-Tested:
-
-- Login bypass attempts
-- URL manipulation
-- Unauthorized requests
-
-## Results
-
-| Test Category | Status |
-|---------------|---------|
-| Authentication | ✅ Passed |
-| RBAC | ✅ Passed |
-| Access Control | ✅ Passed |
-| Docker Deployment | ✅ Passed |
-| URL Protection | ✅ Passed |
-| Session Management | ✅ Passed |
-
----
-
-# 📊 Findings
-
-- Zero Trust significantly reduces unauthorized access risks.
-- RBAC effectively enforces least-privilege access.
-- Docker provides isolated deployment environments.
-- Continuous verification improves security posture.
-- URL tampering and privilege escalation attempts are successfully blocked.
-
----
-
-# 🚀 Future Enhancements
-
-- Database integration
-- Real MFA implementation
-- JWT authentication
-- LDAP/Active Directory integration
-- Audit logging system
-- SIEM integration
-- Kubernetes deployment
-- Micro-segmentation implementation
-
----
-
-# 📚 Technologies Used
-
-- Docker
-- Docker Compose
-- Nginx
-- HTML5
-- CSS3
-- JavaScript
-- Cyber Security Concepts
-- Zero Trust Architecture
-
----
-
-# 📖 References
-
-- NIST SP 800-207 Zero Trust Architecture
-- CISA Zero Trust Maturity Model
-- OWASP Security Guidelines
-- Docker Official Documentation
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Himanshu Soni**
 
-Minor Project 2  
-Zero Trust Architecture Implementation using Docker
+Minor Project 2
+
+Zero Trust Architecture Enterprise Security
 
 ---
 
-## ⭐ Key Principle
+## 📌 Note
 
-> **Never Trust. Always Verify.**
->
-> Every user, device, and request must be authenticated and authorized before access is granted.
-````
-
-This version looks professional on GitHub and directly matches the files and screenshots present in your ZIP project.
+This project is created for educational and demonstration purposes. The implementation focuses on learning Zero Trust principles, secure access control, and containerized deployment in a controlled environment.
