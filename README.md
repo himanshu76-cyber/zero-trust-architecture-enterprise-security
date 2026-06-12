@@ -10,7 +10,7 @@
   
 ```
 
-You can replace your current README with the following professional GitHub-style README. It matches the contents of your ZIP file and is suitable for presentation, viva, and GitHub submission.
+
 
 ````markdown
 # 🛡️ Zero Trust Architecture (ZTA) Enterprise Security Project
